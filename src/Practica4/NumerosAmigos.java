@@ -15,7 +15,6 @@ public class NumerosAmigos {
             contador2 = 0;
             System.out.println("Escribe el primer numero entero positivo:");
             n1 = sc.nextInt();
-
             while (n1 < MINIMO) {
                 System.out.println("El numero tiene que ser entero positivo:");
                 n1 = sc.nextInt();
@@ -71,11 +70,6 @@ public class NumerosAmigos {
             System.out.println("1. Si");
             System.out.println("2. No");
             repetir = sc.nextInt();
-
-            while (repetir < 1 || repetir > 2) {
-                System.out.println("Opcion no valida. Elige 1 o 2:");
-                repetir = sc.nextInt();
-            }
         } while (repetir == 1);
     }
 }
